@@ -1,0 +1,309 @@
+:root{
+    --cor-vermelha: #c9031a;
+    --cor-vinho: #9d1722;
+    --cor-marrom-chocolate: #4a2723;
+    --azul-claro: #07a2a6;
+    --bege: #ffeccb;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+    background-color: #e5e5e5;
+}
+
+#opt-topo{
+    display: flex;
+    background-color: var(--cor-vermelha);
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#opt-topo nav{
+    margin-top: 2.5rem;
+    color: var(--bege);
+    margin-left: -2rem;
+}
+
+h1{
+    font-size: 3.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bege);
+    letter-spacing: 0.2rem;
+    margin: auto;
+}
+
+nav a{
+    color: var(--bege);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#opt-topo img{
+    width: 170px;
+    border-radius: 1rem;
+    height: 140px;
+}
+
+nav a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Inicio da estilização do cadastro clientes */
+#sect-cadastro{
+    display: flex;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Inicio da estilização do section-ofertas */
+
+#section-produtos-ofertas h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#div-produtos-ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produtos-ofertas img{
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+#preco{
+    color: gold;
+}
+
+.produtos-ofertas{
+    border-radius: 1rem;
+    background: linear-gradient(to top, var(--cor-vinho), var(--cor-marrom-chocolate));
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 220px;
+    text-align: center;
+}
+
+#button-oferta{
+    background-color: var(--bege);
+    color: #000;
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+#button-oferta:hover{
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+.produtos-ofertas p{
+    color: #fff;
+    font-weight: bold;
+}
+
+/*------------------------------------- Estilização Seção de Cadastro de Clientes ------------------------------- */
+
+#sect-cadastro{
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 3rem;
+    width: 70rem;
+    margin: auto;
+    background-color: var(--cor-vinho);
+    border-radius: 0.4rem 1.5rem 0.4rem 1rem;
+    border: none;
+}
+
+#form-sect{
+    margin-left: 2rem;
+}
+
+#form-cadastro input[type="number"]:focus {
+    border: 1px solid #2980b9;
+    outline: none; 
+    background-color: #fff;
+  }
+
+  #form-cadastro input[type="text"]:focus{
+    border: 1px solid #2980b9;
+    outline: none; 
+    background-color: #fff;
+  }
+
+  #form-cadastro input[type="email"]:focus{
+    border: 1px solid #2980b9;
+    outline: none; 
+    background-color: #fff;
+  }
+
+  #form-cadastro button{
+    background-color: var(--bege);
+    color: var(--cor-vinho);
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    outline: none;
+    width: 5rem;
+    border: none;
+    transition: 0.3s;
+}
+
+  #form-cadastro button:hover{
+      cursor: pointer;
+      font-weight: 700;
+    background-color: var(--azul-claro);
+    color: var(--bege);
+    transform: scale(1.1);
+  }
+
+  #form-cadastro input[type="checkbox"]:focus{
+    background-color: #2980b9;
+    color: #2980b9;
+  }
+
+#form-cadastro{
+    margin-top: -2rem;
+    margin-right: 2rem;
+}
+
+#form-cadastro h2{
+    color: #fff;
+}
+
+#form-cadastro label{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#form-cadastro input[type="text"],input[type="email"], #form-cadastro input[type="number"]{
+    padding: 0.3rem 0 0.3rem 0.3rem;
+    border: 1px solid #fff;
+    width: 20rem;      
+    border-radius: 5px;         
+    font-size: 16px;            
+    color: #333;                 
+    background-color: #f0f8ff;
+  }
+
+  #form-cadastro input[type="date"]{
+    width: 10rem;
+  }  
+
+#form-sect h2{
+    margin-top: -1rem;
+    width: 30rem;
+    color: #ffffff;
+    margin-bottom: 2rem
+}
+
+#form-sect img{
+    width: 12rem;
+    margin-right: 4rem;
+    margin-top: 1.5rem;
+}
+
+/*---------------------------------- Rodape da página ----------------------------------------------------*/
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--cor-vermelha), var(--cor-vinho));
+    position: relative;
+    padding-top: 0.7rem;
+}
+
+.rodape img{
+    width: 300px;
+    border-radius: 1rem;
+}
+
+#rodape-text{
+    color: #fff;
+    background-color: hsl(355, 74%, 33%);
+    width: 20rem;
+    border-radius: 0 1rem 1rem 0rem;
+    height: 30rem;
+}
+
+#rodape-text p{
+    margin-bottom: 0.9rem;
+}
+
+#img-id{
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+#img-id img{
+    width: 25rem;
+}
+
+#img-id h3{
+    color: var(--bege);
+    letter-spacing: 0.1rem;
+}
+
+#div-icon-footer2 img{
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    width: 10rem;
+}
+
+#icons h3{
+    color: #fff;
+    min-width: 100%;
+    margin-left: 0.5rem;
+}
+
+#rodape-text p{
+    margin-left: 0.8rem;
+}
+
+.icon-footer{
+    max-width: 30px;
+    max-height:25px;
+    margin-bottom: -0.3rem;
+}
+
+.icon-foote{
+    max-width: 3rem;
+    max-height: 2.5rem;
+    margin-right: 0.6rem;
+    background-color: var(--cor-vinho);
+}
+
+.icon-foote:hover{
+    cursor: pointer;
+    background-color: var(--cor-marrom-chocolate);
+}
+
+.rodape #footer-copy{
+    color: #fff;
+    margin: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+    margin-left: 12rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}

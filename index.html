@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/unnamed.jpg" type="image/x-icon">
+    <title>Mix Atacarejo</title>
+</head>
+<body>
+    <header>
+        <!-- Inicio da página -->
+        <div id="opt-topo">
+         <img src="img/unnamed.jpg">
+
+         <!-- Titulo da pagina -->
+         <h1>Mix Atacarejo</h1>
+
+         <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="produtos.html">Produtos</a> |
+            <a href="contato.html">Contato</a>
+         </nav>
+
+        </div>
+        <!-- Fim do opt-topo -->
+    </header>
+
+    <!-- Inicio da seção produtos-ofertas -->
+    <section id="section-produtos-ofertas">
+        <h2>⚠️ Ofertas da Semana no Mix Atacarejo!</h2>
+        <div id="div-produtos-ofertas">
+        
+            <div class="produtos-ofertas">
+                <img src="https://lojasantoantonio.vtexassets.com/arquivos/ids/217238/204170-Chocotone-Com-Gotas-De-Chocolate-400G-BAUDUCCO.jpg?v=638301387472300000" alt="Chocottone"> <br>
+                <div class="texto-oferta">
+                    <p>Chocottone - <span id="preco">R$28.99</span></p>
+                    <button id="button-oferta">COMPRAR AGORA</button>
+                </div>
+            </div>
+
+                <div class="produtos-ofertas">
+                    <img src="https://acouguedonilo.com.br/wp-content/uploads/2022/08/alcatra-bovina-3-430x430.jpg" alt="carne bovina"> <br>
+                    <div class="texto-oferta">
+                        <p>Carne Bovina Kg - <span id="preco">R$39.99</span></p>
+                        <button id="button-oferta">COMPRAR AGORA</button>
+                    </div>
+            </div>
+
+            <div class="produtos-ofertas">
+                <img src="https://t10917.vteximg.com.br/arquivos/ids/163129-1000-1000/SABAO-PO-EMB---4-KG-TIXAN-PRIMAVERA_IMG1.jpg?v=638048072704830000" alt="Tixan Ype"> <br>
+                <div class="texto-oferta">
+                    <p>Tixan Ype 1Kg - <span id="preco">R$8.99</span></p>
+                    <button id="button-oferta">COMPRAR AGORA</button>
+                </div>
+        </div>
+
+            <div class="produtos-ofertas">
+                <img src="https://coopsp.vtexassets.com/arquivos/ids/225817-800-auto?v=637919593580570000&width=800&height=auto&aspect=true" alt="Coca Cola 3L"> <br>
+                <div class="texto-oferta">
+                    <p>Coca Cola 3L - <span id="preco">R$11.99</span></p>
+                    <button id="button-oferta">COMPRAR AGORA</button>
+                </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- -------------------------------------------Seção de Cadastro de Clientes ------------------------------------------ -->
+
+    <section id="sect-cadastro">
+        <div id="form-sect">
+            <h2>Insira seus dados ao lado e concorra em até 80% de desconto na sua primeira compra!</h2>
+            <div style="display: flex;">
+                <img src="img/desconto (1).png">
+                <img src="img/desconto (2).png">
+            </div>
+        </div>
+
+        
+        <div id="form-cadastro">
+            <form action="inserir.php" method="post">
+                <h2>Informe seus dados abaixo:</h2>
+                <input type="number" name="cpf_cliente" placeholder="Insira seu CPF" required> <br><br>
+                <input type="text" name="nome_cliente" placeholder="Insira seu nome" required> <br><br>
+                <input type="email" name="email_cliente" placeholder="Insira seu email" required> <br><br>
+                <input type="number" name="numero_cliente" placeholder="Insira seu número" required> <br><br>
+                <input type="date" name="nascimento_cliente" required> <br><br>
+                <label for="confirmacao">Concordo em receber notificações em meu e-mail <br> sobre ofertas e promoções do Mix Atacarejo</label>
+                <input type="checkbox" name="confirmacao" id="confirmacao"> <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+        
+    </section>
+
+
+    <footer>
+        <div class="rodape">
+            <div id="rodape-text">
+                <p> <img src="img/telefone.png" class="icon-footer"> (081) 93223-1234</p><br>
+                <p> <img src="img/pin.png" class="icon-footer"> Av. Recife 356, Recife - PE, <span style="margin-left: 2.1rem;">509020-000</span></p><br>
+                <p> <img src="img/o-email.png" class="icon-footer"> mixatacarejo@gmail.com</p><br>
+                <p> <img src="img/clock.png" class="icon-footer"> De Segunda á Sábado, <br> <span style="margin-left: 2.1rem;">dás 8h - 22h</span></p><br>
+                <div id="icons">
+                    <h3>Siga nossas redes sociais:</h3>
+                    <div style="display: flex;">
+                        <p><img class="icon-foote" src="img/whatsapp.png"></p>
+                        <p><img class="icon-foote" src="img/instagram.png"></p>
+                        <p><img class="icon-foote" src="img/tiktok.png"></p>
+                        <p><img class="icon-foote" src="img/facebook.png"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <p id="footer-copy">Todos os direitos Reservados. <br> &copy; 2024 Mix Atacarejo</p>
+            
+            
+            <div id="img-id">
+                <div>
+                    <h3>É no Varejo e no Atacado! <br> Preço baixo é só no Mix Atacarejo!</h3>
+                    <div style="display: flex;" id="div-icon-footer2">
+                        <p><img class="icon-footer2" src="img/cart.png"></p>
+                        <p><img class="icon-footer2" src="img/payment-method.png"></p>
+                    </div>
+                    
+                </div>
+
+                <img id="img-footer" src="img/20230612_mateus_atacarejo_materia.jpg">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
